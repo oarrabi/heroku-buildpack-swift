@@ -36,11 +36,22 @@ mkdir -p "$CACHE_DIR"
 echo "HERE B6"
 
 source "$BIN_DIR/utils"
+echo "HERE B6 a"
 source "$BIN_DIR/steps/swiftenv"
+
+echo "HERE B6 b"
 source "$BIN_DIR/steps/swift"
+
+echo "HERE B6 c"
 source "$BIN_DIR/steps/clang"
+
+echo "HERE B6 d"
 source "$BIN_DIR/steps/hooks/pre_compile"
+
+echo "HERE B6 e"
 source "$BIN_DIR/steps/swift-build"
+
+echo "HERE B6 f"
 source "$BIN_DIR/steps/swift-install"
 
 echo "HERE B7"
